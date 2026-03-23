@@ -409,7 +409,7 @@ Categorie disponibili: ${categories.join(", ")}`,
               <button key={c} onClick={()=>setFilterCat(c)} className="tap"
                 style={{flexShrink:0,background:filterCat===c?"#fff":"transparent",color:filterCat===c?"#000":C.muted,border:`1.5px solid ${filterCat===c?"#fff":c==="Tutte"?"#333":getCatColor(c)+"66"}`,borderRadius:20,padding:"5px 14px",fontSize:12,fontWeight:700,cursor:"pointer",transition:"all .2s",whiteSpace:"nowrap"}}>
                 {c}{c!=="Tutte"&&catCounts[c]?` ${catCounts[c]}`:""}</button>
-              );
+              )
             })}
           </div>
 
